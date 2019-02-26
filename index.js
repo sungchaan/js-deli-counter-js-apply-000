@@ -1,6 +1,13 @@
-function takeANumber(currLine, newName){
-  currLine.push(newName);
-  return `Welcome, ${newName}. You are number ${currLine.indexOf(newName) + 1} in line.`
+// function takeANumber(currLine, newName){
+//   currLine.push(newName);
+//   return `Welcome, ${newName}. You are number ${currLine.indexOf(newName) + 1} in line.`
+// }
+
+let counter = 0
+function takeANumber(currLine){
+  counter++;
+  currLine.push(counter);
+  return `Welcome, you are number ${counter} in line.`
 }
 
 function nowServing(currLine){
